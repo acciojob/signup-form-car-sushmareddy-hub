@@ -7,7 +7,7 @@
 </head>
 
 <body>
-	<form method="post" action="/signup">
+	<form method="POST" action="/signup">
 		<div>
 	<label for="name">Name*</label>	
 	<input type="text" id="name" name="name" placeholder="Name" required>
@@ -17,19 +17,19 @@
 	<input type="email" id="email" name="email" placeholder="Email" required>
 		</div>
 		<div>
-		<label for="gender">Gender*</label>	
-	<input type="radio"  id="gender-m" name="gender"  required>
-		<label for="gender-m">Male</label>
-	<input type="radio"  id="gender-m" name="gender"  required>
-		<label for="gender-f">Female</label>
+		<label for="gender">Gender*</label><br>	
+	<input type="radio"  id="gender-m" name="gender" value="Male" required>
+		<label for="gender-m">Male</label><br>
+	<input type="radio"  id="gender-f" name="gender" value="Female" required>
+		<label for="gender-f">Female</label><br>
 		</div>
 		<div>
 	<label for="cars">Car Brands*</label>
 	<select id="cars" name="cars" required>
-		<option value="disabled selected" >--Please choose an option--</option>
-		<option value="bmw"> BMW</option>
-		<option value="audi"> Audi</option>
-		<option value="mercedez">Mercedez</option>
+		<option value=" selected disabled" >--Please choose an option--</option>
+		<option value="BMW">BMW</option>
+		<option value="Audi"> Audi</option>
+		<option value="Mercedez">Mercedez</option>
 	</select>
 		</div>
 		<div>
@@ -50,7 +50,7 @@
 	<input type="password" id="password" name="password" placeholder="Password" required>
 		</div>
 		<div>
-	<input type="checkbox" name="tos" required id="tos">
+	<input type="checkbox" name="tos"  id="tos" value="agreed" required>
 	<label for="tos">I agree to the TOS</label>
 		</div>
 		<div>
